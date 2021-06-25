@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+</head>
+<body>
+    <header>
+        <h1 id="heading">Perfect Travel Tour</h1>
+
+    </header>
+    <main>
+        <section id="form">
+            <form>
+                <div><input type="text" name="country" id="country" placeholder="Destination: e.g, ng for Nigeria"></div>
+                <div><input type="text" name="city" id="city" placeholder="City e.g Abuja"></div>
+                <div><input type="date" name="date" id="date"></div>
+                <div><input type="submit" value="Submit" id="submit"></div>
+            </form>
+        </section>
+        <section id="main">
+            <div class="weather">
+                <h2 class="h2">Current weather</h2>
+                    <div id="pixabay-image"></div>
+                    <div id="weather-description"></div>
+                    <div id="weather-date"></div>
+                    <div id="img"></div>       
+            </div>
+            <div class="weather-forcast">
+                <h2 class="h2">Weather forcast</h2>
+                <div id="icon"></div>
+                <div id="forcast-date"></div>
+                <div id="forcast-result"></div>
+                <div id="temp"></div>
+                <div id="forcast-weather"></div>
+            </div>
+        </section>
+    </main>
+    <script src="../../../dist/main.js"></script>
+</body>
+</html>
