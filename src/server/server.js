@@ -41,7 +41,7 @@ const port = 8000;
 app.use(cors());
 app.use(express.json());
 // Connect frontend to backend
-app.use(express.static('client'));
+app.use(express.static('dist'));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../../dist/index.html'));
