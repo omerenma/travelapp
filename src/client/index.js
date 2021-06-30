@@ -5,6 +5,7 @@ import script from '../client/js/script';
 import '../client/styles/header.scss';
 import '../client/styles/main.scss';
 import '../client/styles/section.scss';
+import '../client/styles/query.scss';
 
 geonameAPiCall;
 UI;

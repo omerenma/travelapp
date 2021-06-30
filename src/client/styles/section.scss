@@ -15,6 +15,17 @@
       &:focus {
         outline: none;
       }
+      &:hover {
+        background-color: skyblue;
+        transition: 1s all;
+        color: white;
+      }
+      &::-webkit-input-placeholder {
+        color: skyblue;
+      }
+      // &::-webkit-input-placeholder:hover {
+      //   color: white;
+      // }
     }
     input[type='submit'] {
       width: 80px;

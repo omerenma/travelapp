@@ -1,0 +1,96 @@
+@media only screen and (max-width: 480px) {
+  header {
+    position: relative;
+    left: -1px;
+    bottom: 40px;
+    width: 150%;
+    height: 90vh !important;
+    background: url('../media/flight.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: ease-in 10s;
+    h1 {
+      color: #fff;
+      border: 1px solid yellowgreen;
+      position: relative;
+      top: 65%;
+      font-size: 30px;
+      transition: all 2s;
+    }
+  }
+
+  //   Section style
+
+  #form {
+    position: relative;
+    bottom: 160px;
+
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      left: 80px;
+      top: 5px;
+      gap: 5px;
+      input {
+        border: 0.5px solid gray;
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        margin-left: 22.5px;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type='submit'] {
+        width: 120px;
+        border-radius: 5px;
+        font-weight: bolder;
+        cursor: pointer;
+        position: relative;
+        left: 50px;
+        top: 5px;
+        // right: 300px;
+      }
+      input[type='submit']:hover {
+        background-color: darken($color: #d1c1c1, $amount: 10);
+        color: whitesmoke;
+      }
+    }
+  }
+  #main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+    left: 55px;
+    top: -70px;
+    height: auto;
+    //   width: 300px;
+    //   height: 200px;
+  }
+  .weather {
+    background-color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    margin-left: 10px;
+  }
+  .weather-forcast {
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    width: 300px;
+  }
+  .h2 {
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+  }
+}

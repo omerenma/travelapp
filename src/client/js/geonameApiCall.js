@@ -1,4 +1,8 @@
+import { fetchImage } from '../../server/APICALLS/apiCall';
+
 const urls = 'http://localhost:8000/geoname';
+const pixabayApiUri = 'https://pixabay.com/api/?';
+const pixabayKey = '22144354-a6dce848358aebe805c696aa2';
 const { UI } = require('./UI');
 export const geonameAPiCall = async (url) => {
   const city = document.getElementById('city').value;

@@ -8,7 +8,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
-  devtool: 'source-map',
+  // devtool: 'source-map',
   entry: './src/client/index.js',
   // Use optimization to minify oour css
   optimization: {
@@ -28,7 +28,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        // use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,

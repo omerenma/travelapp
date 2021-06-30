@@ -30,8 +30,8 @@
             </div>
             <div class="weather-forcast">
                 <h2 class="h2">Weather forcast</h2>
-                <div id="icon"></div>
                 <div id="forcast-date"></div>
+                <div id="icon"></div>
                 <div id="forcast-result"></div>
                 <div id="temp"></div>
                 <div id="forcast-weather"></div>
@@ -39,5 +39,14 @@
         </section>
     </main>
     <script src="main.js"></script>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
 </body>
 </html>

@@ -1,7 +1,4 @@
 const fetch = require('node-fetch');
-const geonamesUri =
-  'http://api.geonames.org/searchJSON?username=omerenma&country=ng';
-const weatherBitApiKey = 'a610dd76d181454f97535a2b1a7ea90b';
 
 // Geonames API Function
 const geonamesApi = async (url) => {
@@ -59,9 +56,23 @@ const pixaBayApi = async (url) => {
     console.log(error.message);
   }
 };
+
+// Pixabay random image
+const fetchImage = async (url) => {
+  const res = await fetch(url);
+  try {
+    const result = await res.json();
+    console.log(result, 'result');
+    return result;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 module.exports = {
   geonamesApi,
   weatherBitApi,
   weatherForcastApi,
   pixaBayApi,
+  fetchImage,
 };
