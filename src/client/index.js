@@ -7,6 +7,4 @@ import '../client/styles/main.scss';
 import '../client/styles/section.scss';
 import '../client/styles/query.scss';
 
-geonameAPiCall;
-UI;
-script;
+export { geonameAPiCall, UI, script };

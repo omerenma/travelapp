@@ -18,17 +18,17 @@ module.exports = {
     libraryTarget: 'var',
     library: 'Client',
   },
+  stats: 'verbose',
   module: {
     rules: [
       {
-        test: '/.js$',
+        test: /\.js$/,
         exclude: '/node_modules/',
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-        // use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
