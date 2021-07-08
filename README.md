@@ -15,3 +15,6 @@ This travel application is the Udacity capstone project developed by Kingsley
 ## Suggestions implemented to make app stand out
 
 - It uses localstorage to store data on the client.
+
+## Contribution
+This project is opened to contribution
